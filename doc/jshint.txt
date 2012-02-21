@@ -1,0 +1,36 @@
+*jsstyle.vim*  A plugin that integrates jsstyle with Vim
+
+==============================================================================
+Author:  Orlando Vazquez <ovazquez@gmail.com>                  *jsstyle-author*
+Author:  Andreas Wålm <andreas+jshintvim@walm.net>             *jshint-author*
+License: See *LICENSE* file
+
+==============================================================================
+INTRODUCTION                                                          *jsstyle*
+
+This plugin is a wrapper around jsstyle.
+
+This plugin will allow you to run jsstyle from vim, and shows the results in 
+a split window.
+
+:JSStyle {file}                                                       *:JSStyle*
+
+    Test {file} with jsstyle.
+    If {file} not provided it uses current file.
+
+    Behaves just like the |:grep| command, but will open the |Quickfix| 
+    window for you. 
+
+Style errors found in file will be listed in the split window, along with the 
+line and column number. 
+
+<Enter> on a line in this window will open the file, and place the cursor on 
+the matching line.
+
+Press 'o' in a line in |Quickfix| will open the file in a new window and place
+the cursor on the matching line.
+
+Pressing 'go' will do a preview (open but maintain focus on jsstyle results)
+
+Press 'q' to close |Quickfix| window.
+
